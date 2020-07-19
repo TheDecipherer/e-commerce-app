@@ -1,5 +1,6 @@
 import 'package:e_commerce_app/widgets/collections_widget.dart';
 import 'package:e_commerce_app/widgets/home_widget.dart';
+import 'package:e_commerce_app/widgets/orders_widget.dart';
 import 'package:e_commerce_app/widgets/placeholder_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _children = [
     HomeWidget(),
     CollectionsWidget(),
-    PlaceHolderWidget(Colors.green),
+    OrdersWidget(),
     PlaceHolderWidget(Colors.yellow),
   ];
 
