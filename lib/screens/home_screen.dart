@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/widgets/home_widget.dart';
 import 'package:e_commerce_app/widgets/placeholder_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    PlaceHolderWidget(Colors.red),
+    HomeWidget(),
     PlaceHolderWidget(Colors.blue),
     PlaceHolderWidget(Colors.green),
     PlaceHolderWidget(Colors.yellow),
@@ -25,7 +26,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('E Commerce App'),
+        title: Text('Hi Varun,'),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.favorite), onPressed: () {}),
+          IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {}),
+        ],
       ),
       body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
