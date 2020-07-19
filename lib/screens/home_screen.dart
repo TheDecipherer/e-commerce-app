@@ -1,7 +1,7 @@
+import 'package:e_commerce_app/widgets/account_widget.dart';
 import 'package:e_commerce_app/widgets/collections_widget.dart';
 import 'package:e_commerce_app/widgets/home_widget.dart';
 import 'package:e_commerce_app/widgets/orders_widget.dart';
-import 'package:e_commerce_app/widgets/placeholder_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     HomeWidget(),
     CollectionsWidget(),
     OrdersWidget(),
-    PlaceHolderWidget(Colors.yellow),
+    AccountsWidget(),
   ];
 
   void onTabTapped(int index) {
